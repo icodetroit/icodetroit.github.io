@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  width: 100vw; }
+
+.container-fluid.header {
+  color: white;
+  height: 500px; }
+  .container-fluid.header .header-bar {
+    margin-top: 10%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+    background: #349784;
+    margin-left: 0; }
+    .container-fluid.header .header-bar .about, .container-fluid.header .header-bar .blog, .container-fluid.header .header-bar .ico {
+      text-align: center; }
+    .container-fluid.header .header-bar .ico h1 {
+      font-size: 8em; }
+.container-fluid.info-section {
+  height: 500px;
+  background: #349784;
+  color: #ECB351; }
+.container-fluid.img1 {
+  background: url(../img/DetroitSkyline.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 1000px; }
+.container-fluid.img2 {
+  background: url(../img/art-supplies-sm.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 1000px; }
+
+/*# sourceMappingURL=main.css.map */

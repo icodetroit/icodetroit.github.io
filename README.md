@@ -1,4 +1,3 @@
-ICODetroit
-==========
+ICO Detroit website
 
-Website for ICO Detroit
+Run: http-server .

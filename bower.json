@@ -1,0 +1,25 @@
+{
+  "name": "slate",
+  "version": "0.0.0",
+  "authors": [
+    "migreva <mikevee313@gmail.com>"
+  ],
+  "description": "Blank slate",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": null,
+    "bootstrap-sass-official": null,
+    "skrollr": null,
+    "requirejs": null
+  }
+}
