@@ -20,6 +20,7 @@
     "jquery": null,
     "bootstrap-sass-official": null,
     "skrollr": null,
-    "requirejs": null
+    "requirejs": null,
+    "bootstrap": "~3.3.2"
   }
 }
