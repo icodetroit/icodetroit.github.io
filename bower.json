@@ -21,6 +21,7 @@
     "bootstrap-sass-official": null,
     "skrollr": null,
     "requirejs": null,
-    "bootstrap": "~3.3.2"
+    "bootstrap": "~3.3.2",
+    "velocity": "~1.2.2"
   }
 }

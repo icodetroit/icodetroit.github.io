@@ -1,0 +1,113 @@
+@import "./include/base.scss";
+
+$padding-lg: 20vh;
+$padding-md: 250px;
+$padding-sm: 200px;
+
+html { 
+	// background: url(../img/chalkboard.jpg) no-repeat center center fixed; 
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// -o-background-size: cover;
+	// background-size: cover;
+	background-color: #ed7307;
+}
+
+.index {
+	@include transition-mixin(opacity 500ms ease-in);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: $padding-sm;
+	font-family: "chalkboard";
+
+	@media (min-width: $screen-md-min) {
+		padding-top: $padding-md;
+	}
+
+	.title-text {
+		
+		text-align: center;
+		font-size: 5em;
+		color: white;
+
+		@media (min-width: $screen-md-min) {
+			font-size: 8em;
+		}
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.menu-item {
+			background-origin: content-box;
+			background-repeat: no-repeat;			
+			background-position: 0 0;
+			background-size: 100% 100%;
+			height: $padding-sm;
+			width: $padding-sm;
+			position: absolute;
+			padding: .5%;
+			opacity: 0;
+
+
+			a, a:visited, a:hover, a:active {
+				text-decoration: none;
+				color: inherit;
+			}
+
+			@media (min-width: $screen-md-min) {
+				height: $padding-md;
+				width: $padding-md;
+			}
+
+			.text {
+				font-size: 3em;
+				position: absolute;
+				@media (min-width: $screen-md-min) {
+					font-size: 4em;
+				}
+			}
+
+			&.about {
+				background-image: url(../img/thought_bubble.png);
+				top: 2;
+				left: 20%;
+
+				.text {
+					top: 29%;
+					left: 27%;
+				}
+			}
+
+			&.blog {
+				background-image: url(../img/thought_bubble_right.png);
+				top: 2;
+				right: 15%;
+
+				.text {
+					top: 29%;
+					left: 27%;
+				}
+			}
+
+			&.contact {
+				background-image: url(../img/thought_bubble_right_invert.png);
+				right: 30%;
+				top: $padding-md * 1.4;
+
+				.text {
+					top: 48%;
+					left: 14%;
+				}
+			}
+		}
+	}
+}

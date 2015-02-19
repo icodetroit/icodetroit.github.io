@@ -1,0 +1,23 @@
+extends ./base 
+- var js_file = js_base + "index.js";
+
+block head
+    title IMAGINARIUM
+ 
+    link(rel='stylesheet', href='static/css/index.css')
+    script(src='#{requirejs}', data-main='#{js_base}index.js', type='text/javascript')
+block content
+    .index
+        .title-text IMAGINARIUM
+        .menu
+            .menu-item.about
+                a(href='about.html')
+                    .text About
+            .menu-item.blog
+                a(href='blog.html')
+                    .text Blog
+            .menu-item.contact
+                a(href='contact.html')
+                    .text Contact
+        
+

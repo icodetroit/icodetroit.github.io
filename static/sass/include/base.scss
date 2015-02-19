@@ -1,0 +1,18 @@
+@import "imports.scss";
+
+body {
+	background-color: #ed7307;	
+}
+
+html, body {
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+	width: 100%;
+}
+
+*, *:before, *:after { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

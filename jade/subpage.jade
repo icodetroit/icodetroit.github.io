@@ -1,0 +1,43 @@
+include ./include
+- var menu_items = [];
+- menu_items.push({ value: 'home', displayName: 'Home', href: "/" });
+- menu_items.push({ value: 'about', displayName: 'About', href: "/about.html" });
+- menu_items.push({ value: 'blog', displayName: 'Blog', href: "/blog.html" });
+- menu_items.push({ value: 'contact', displayName: 'Contact', href: "contact.html" })
+
+block vars
+
+doctype html
+mixin nav_item(item)
+	//- item == obj in menu_item array
+	if (active == item.value)
+		li(class='#{item.value} active')
+			a(href='#{item.href}') #{item.displayName}
+	else
+		li(class='#{item.value}')
+			a(href='#{item.href}') #{item.displayName}
+
+head
+	include ./meta.jade
+
+	block css
+	block js
+body 
+	.navbar.navbar-default.navbar-static-top
+		.container-fluid
+			.navbar-header
+				button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#ico-navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+
+			.collapse.navbar-collapse#ico-navbar
+				ul.nav.navbar-nav
+					each item in menu_items
+						+nav_item(item)
+
+	.container-fluid
+		.row.content
+			block content
+

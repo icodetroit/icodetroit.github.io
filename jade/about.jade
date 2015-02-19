@@ -1,0 +1,12 @@
+extends ./subpage
+include ./include
+- js_file = js_base + "about.js";
+
+block vars
+	- var active = "about";
+
+block css
+	link(rel='stylesheet', href='static/css/about.css')
+
+block js
+	script(src='#{requirejs}', data-main='#{js_base}about.js', type='text/javascript')
