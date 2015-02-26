@@ -38,7 +38,11 @@ body
 					each item in menu_items
 						+nav_item(item)
 
-	.container-fluid
-		.row.content
+	.subnav.container-fluid
+		.row
+			block subnav
+
+	.container-fluid.content
+		.row
 			block content
 
