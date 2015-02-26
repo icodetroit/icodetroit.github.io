@@ -10,6 +10,7 @@ requirejs.config({
 	paths: {
 		"jquery": "/static/bower_components/jquery/dist/jquery.min",
 		"velocity": "/static/bower_components/velocity/velocity.min",
-		"bootstrap": "/static/bower_components/bootstrap/dist/js/bootstrap.min"
+		"bootstrap": "/static/bower_components/bootstrap/dist/js/bootstrap.min",
+		"skrollr": "/static/bower_components/skrollr/dist/skrollr.min"
 	}
 });

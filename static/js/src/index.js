@@ -1,5 +1,6 @@
 requirejs(["config"], function() {
-	requirejs(["jquery", "velocity"], function($, velocity) {
+	requirejs(["jquery", "velocity", "skrollr"], function($, velocity, skrollr) {
+		var s = skrollr.init();
 		$(".index").velocity({ opacity: 1 }, {
 			easing: "ease-in",
 			complete: function(elements) {

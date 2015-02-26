@@ -5861,9 +5861,6 @@ input[type="button"].btn-block {
 @font-face {
   font-family: "chalkboard";
   src: url("../fonts/chalkboard/chalkboard.otf") format("opentype"); }
-body {
-  background-color: #ed7307; }
-
 html, body {
   margin: 0;
   padding: 0;
@@ -5879,6 +5876,40 @@ html, body {
   color: #163BA0; }
   .navbar *, .navbar *:before, .navbar *:after {
     color: #163BA0 !important; }
+
+/* Skrollr Stuffs */
+#skrollr-body {
+  height: 100%;
+  overflow: visible;
+  position: relative; }
+
+.image-gap {
+  height: 100%;
+  background: transparent center no-repeat;
+  background-size: cover; }
+
+.parallax-image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  top: 0; }
+
+.parallax-image.skrollable-between {
+  display: block; }
+
+.parallax-image-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  top: -100%; }
 
 .subnav {
   width: 100%;

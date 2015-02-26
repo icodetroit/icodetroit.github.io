@@ -6,8 +6,12 @@ block head
  
     link(rel='stylesheet', href='static/css/index.css')
     script(src='#{requirejs}', data-main='#{js_base}index.js', type='text/javascript')
+block skrollr-images
+    .parallax-image-wrapper(data-anchor-target="#top + .image-gap", data-bottom-top="transform:translate3d(0px, 200%, 0px)", data-top-bottom="transform:translate3d(0px, 0%, 0px)")
+        .parallax-image(style="background-image:url(/static/img/river.jpg)", data-anchor-target="#top + .image-gap", data-bottom-top="transform: translate3d(0px, -80%, 0px);", data-top-bottom="transform: translate3d(0px, 80%, 0px);")
+
 block content
-    .index
+    .section#top
         .title-text IMAGINARIUM
         .menu
             .menu-item.about
@@ -19,5 +23,8 @@ block content
             .menu-item.contact
                 a(href='contact.html')
                     .text Contact
-        
+    .image-gap
+
+            
+            
 

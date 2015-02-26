@@ -9,17 +9,20 @@ html {
 	// -moz-background-size: cover;
 	// -o-background-size: cover;
 	// background-size: cover;
-	background-color: #ed7307;
+	// background-color: #ed7307;
 }
 
-.index {
+.section {
+
+	background-color: $primary-color;
 	@include transition-mixin(opacity 500ms ease-in);
-	opacity: 0;
+	// opacity: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	// height: 100%;
+	height: 100vh;
 	padding-top: $padding-sm;
 	font-family: "chalkboard";
 
@@ -54,7 +57,7 @@ html {
 			width: $padding-sm;
 			position: absolute;
 			padding: .5%;
-			opacity: 0;
+			// opacity: 0;
 
 
 			a, a:visited, a:hover, a:active {
@@ -124,4 +127,8 @@ html {
 			}
 		}
 	}
+}
+
+.image-gap {
+	background-image: url(/static/img/river.jpg);
 }
