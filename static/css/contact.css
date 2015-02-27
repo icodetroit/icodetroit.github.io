@@ -5877,16 +5877,35 @@ html, body {
   .navbar *, .navbar *:before, .navbar *:after {
     color: #163BA0 !important; }
 
-/* Skrollr Stuffs */
-#skrollr-body {
-  height: 100%;
-  overflow: visible;
-  position: relative; }
+* {
+  padding: 0;
+  margin: 0; }
 
-.image-gap {
+html, body {
+  height: 100%; }
+
+.skrollr-desktop body {
+  height: 100% !important; }
+
+body {
+  font-family: sans-serif; }
+
+p {
+  margin: 1em 0; }
+
+.parallax-image-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden; }
+
+.parallax-image-wrapper-50 {
+  height: 50%;
+  top: -50%; }
+
+.parallax-image-wrapper-100 {
   height: 100%;
-  background: transparent center no-repeat;
-  background-size: cover; }
+  top: -100%; }
 
 .parallax-image {
   display: none;
@@ -5896,20 +5915,54 @@ html, body {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; }
+
+.parallax-image-50 {
+  height: 200%;
+  top: -50%; }
+
+.parallax-image-100 {
   height: 100%;
   top: 0; }
 
 .parallax-image.skrollable-between {
   display: block; }
 
-.parallax-image-wrapper {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
+.no-skrollr .parallax-image-wrapper {
+  display: none !important; }
+
+#skrollr-body {
   height: 100%;
-  top: -100%; }
+  overflow: visible;
+  position: relative; }
+
+.gap {
+  background: transparent center no-repeat;
+  background-size: cover; }
+  .gap.first {
+    top: 100%; }
+
+.skrollr .gap {
+  background: transparent !important; }
+
+.gap-50 {
+  height: 50%; }
+
+.gap-100 {
+  height: 100%; }
+
+.header, .content {
+  background: #fff;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content-full {
+  height: 100%; }
+
+#done {
+  height: 100%; }
 
 .subnav {
   width: 100%;
@@ -5929,14 +5982,16 @@ html, body {
         float: left;
         width: 33.33333%; } }
 
-.content {
-  background: white;
+.gap-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  width: 95%;
-  border-radius: 10px;
-  padding: 10px; }
-  @media (min-width: 992px) {
-    .content {
-      width: 90%; } }
+  width: 100%;
+  z-index: 1; }
+
+.section {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2; }
 
 /*# sourceMappingURL=contact.css.map */

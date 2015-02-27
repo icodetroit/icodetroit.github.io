@@ -7,12 +7,18 @@ block head
     link(rel='stylesheet', href='static/css/index.css')
     script(src='#{requirejs}', data-main='#{js_base}index.js', type='text/javascript')
 block skrollr-images
-    .parallax-image-wrapper(data-anchor-target="#top + .image-gap", data-bottom-top="transform:translate3d(0px, 200%, 0px)", data-top-bottom="transform:translate3d(0px, 0%, 0px)")
-        .parallax-image(style="background-image:url(/static/img/river.jpg)", data-anchor-target="#top + .image-gap", data-bottom-top="transform: translate3d(0px, -80%, 0px);", data-top-bottom="transform: translate3d(0px, 80%, 0px);")
+    .parallax-image-wrapper.parallax-image-wrapper-100(data-anchor-target='#top + .gap', data-bottom-top='transform:translate3d(0px, 200%, 0px)', data-top-bottom='transform:translate3d(0px, 0%, 0px)')
+        .parallax-image.parallax-image-100(style='background-image:url(/static/img/river.jpg)', data-anchor-target='#top + .gap', data-bottom-top='transform: translate3d(0px, -80%, 0px);', data-top-bottom='transform: translate3d(0px, 80%, 0px);')
+      // the +/-80% translation can be adjusted to control the speed difference of the image
+    |   
+    .parallax-image-wrapper.parallax-image-wrapper-50(data-anchor-target='#contact + .gap', data-bottom-top='transform:translate3d(0px, 300%, 0px)', data-top-bottom='transform:translate3d(0px, 0%, 0px)')
+        .parallax-image.parallax-image-50(style='background-image:url(/static/img/DetroitSkyline.jpg)', data-anchor-target='#contact + .gap', data-bottom-top='transform: translate3d(0px, -60%, 0px);', data-top-bottom='transform: translate3d(0px, 60%, 0px);')
+
 
 block content
-    .section#top
-        .title-text IMAGINARIUM
+    .section.container-fluid#top
+        .title-container.row
+            .title IMAGINARIUM
         .menu
             .menu-item.about
                 a(href='about.html')
@@ -23,7 +29,28 @@ block content
             .menu-item.contact
                 a(href='contact.html')
                     .text Contact
-    .image-gap
+    .gap.gap-100(style='background-image:url(/static/img/river.jpg);')
+        #about.section.container-fluid
+            .title ABOUT   
+            p Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+            p My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?
+    #contact.container-fluid.section
+        .title-container.row
+            .title CONTACT
+        .contact-person.row#kristian
+            .image.col-md-4.col-sm-4.col-xs-4
+                img(src="/static/img/kristian.jpg")
+            .contact-info-container.col-md-8.col-sm-8.col-xs-8
+                .contact-info.row
+                    .label.col-md-4.col-sm-4.col-xs-4 WHO
+                    .info.col-md-8.col-sm-8.col-xs-8 Kristian Chanel, Founder
+                .contact-info.row
+                    .label.col-md-4.col-sm-4.col-xs-4 EMAIL
+                    a.info.col-md-8.col-sm-8.col-xs-8(href="mailto:kristianchangelphotography@gmail.com") kristianchanelphotography@gmail.com
+
+    .gap.gap-50(style='background-image:url(/static/img/DetroitSkyline.jpg);')
+
+
 
             
             

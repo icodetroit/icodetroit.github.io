@@ -1,43 +1,139 @@
 @import "./include/base.scss";
+@import "./include/subpage.scss";
 
 $padding-md: 250px;
 $padding-sm: 100px;
 
-html { 
-	// background: url(../img/chalkboard.jpg) no-repeat center center fixed; 
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
-	// background-color: #ed7307;
-}
-
 .section {
-
-	background-color: $primary-color;
 	@include transition-mixin(opacity 500ms ease-in);
-	// opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	// height: 100%;
 	height: 100vh;
-	padding-top: $padding-sm;
-	font-family: "chalkboard";
 
-	@media (min-width: $screen-xs-min) {
-		padding-top: $padding-md;
+	p {
+		font-size: 1.45em;
 	}
 
-	.title-text {
+	&#top {
+		// background-color: $primary-color;
+		background: url(/static/img/orange-section-background.png) repeat;
+		.title {
+			color: white;	
+			text-align: center;
+		}
+		padding-top: $padding-sm;
+	
+		@media (min-width: $screen-xs-min) {
+			padding-top: $padding-md;
+		}
 		
-		text-align: center;
+	}
+
+	&#about {
+		
+		.title {
+			background: rgba(#ffffff, .5);
+			margin: 3% 0% 0% 3%;
+			color: $primary-color;
+			display: inline-block;
+			padding: 0 3%;
+			border-radius: 5px;	
+		
+			@media (min-width: $screen-md-min) {
+				margin-left: 7%;
+			}
+		}
+	}
+
+	&#contact {
+		background: url(/static/img/white-section-background.png) repeat;
+		.title {
+			background: rgba($primary-color, .5);
+			color: white;
+			display: inline-block;
+			float: right;
+			margin: 3% 3% 0% 0%;	
+			padding: 0 3%;
+			border-radius: 5px;	
+		
+			@media (min-width: $screen-md-min) {
+				margin-right: 7%;
+			}
+		}
+
+		.contact-person {
+			margin: auto auto;
+			font-family: chalkboard;
+			padding: 10px;
+
+			&#kristian {
+				$contact-height:  160px * 2;
+				height: $contact-height;
+
+				// 1070 × 1600
+				// Aspect ratio: 107 : 160
+					img {
+						height: $contact-height;
+						width: 107px * 2;
+					}					
+			}
+			.image {
+
+			}
+			.contact-info {
+				$label-height: 100px;
+				$label-height-md: 75px;
+				height: $label-height;
+				@media (min-width: $screen-sm-min) {
+					font-size: $label-height-md;
+				}
+				.label {
+					font-size: $label-height;
+					line-height: $label-height;
+					height: 100%;
+					@media (min-width: $screen-sm-min) {
+						font-size: $label-height-md;
+						line-height: $label-height-md;
+					}
+					
+					
+					color: grey;
+					text-align: right;
+					padding-right: 5px;
+					clear: both;
+				}
+				.info {
+					font-size: 45px;
+					line-height: 45px;
+					height: 100%;
+					text-align: left;
+					padding-left: 5px;
+					clear: both;
+					// word-wrap: break-word;
+				}
+
+			}
+		}
+	}
+
+	h2 {
+		font-family: chalkboard;
+	}
+
+
+	.title {
+		height: 20%;
 		font-size: 5em;
-		color: white;
+		font-family: "chalkboard";
 
 		@media (min-width: $screen-xs-min) {
 			font-size: 8em;	
+		}
+	}
+
+	.section-title {
+		font-size: 4em;
+
+		@media (min-width: $screen-xs-min) {
+			font-size: 7em;	
 		}
 	}
 
@@ -127,8 +223,4 @@ html {
 			}
 		}
 	}
-}
-
-.image-gap {
-	background-image: url(/static/img/river.jpg);
 }
