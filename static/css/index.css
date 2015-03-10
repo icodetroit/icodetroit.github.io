@@ -6855,7 +6855,7 @@ p {
       .section p {
         font-size: 1em; } }
   .section#top {
-    background: url(/static/img/orange-section-background.png) repeat;
+    background-color: #ed7307;
     padding-top: 100px; }
     .section#top .title {
       color: white;
@@ -6874,7 +6874,7 @@ p {
       .section#about .title {
         margin-left: 7%; } }
   .section#about .about-content {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     margin: 3% 5%; }
     @media (min-width: 768px) {
@@ -6888,7 +6888,7 @@ p {
     float: none;
     text-align: center; }
   .section#contact {
-    background: url(/static/img/white-section-background.png) repeat; }
+    background-color: white; }
     .section#contact .title {
       background: rgba(237, 115, 7, 0.5);
       color: white;

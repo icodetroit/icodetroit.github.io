@@ -16,8 +16,8 @@ $padding-sm: 100px;
 	}
 
 	&#top {
-		// background-color: $primary-color;
-		background: url(/static/img/orange-section-background.png) repeat;
+		background-color: $primary-color;
+		// background: url(/static/img/orange-section-background.png) repeat;
 		.title {
 			color: white;	
 			text-align: center;
@@ -46,7 +46,7 @@ $padding-sm: 100px;
 		}
 
 		.about-content {
-			font-size: 2em;
+			font-size: 1.5em;
 			text-align: center;
 			margin: 3% 5%;
 
@@ -65,7 +65,8 @@ $padding-sm: 100px;
 	}
 
 	&#contact {
-		background: url(/static/img/white-section-background.png) repeat;
+		// background: url(/static/img/white-section-background.png) repeat;
+		background-color: white;
 		.title {
 			background: rgba($primary-color, .5);
 			color: white;
