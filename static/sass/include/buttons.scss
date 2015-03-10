@@ -1,0 +1,12 @@
+@import "constants.scss";
+@import "animations.scss";
+
+.ico-btn {
+	background-color: $primary-color;
+	color: white;
+}
+
+.ico-btn-lg {
+	font-size: 2em;
+	padding: 5px;
+}

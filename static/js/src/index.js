@@ -1,7 +1,9 @@
 requirejs(["config"], function() {
-	requirejs(["jquery", "velocity", "skrollr"], function($, velocity, skrollr) {
+	requirejs(["jquery", "velocity", "skrollr", "base"], function($, velocity, skrollr) {
 		var s = skrollr.init();
-		$(".index").velocity({ opacity: 1 }, {
+
+		/** Animate the opening title page */
+		$("#top").velocity({ opacity: 1 }, {
 			easing: "ease-in",
 			complete: function(elements) {
 				$(".menu-item").each(function(i) {

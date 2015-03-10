@@ -23,5 +23,8 @@
     "requirejs": null,
     "bootstrap": "~3.3.2",
     "velocity": "~1.2.2"
+  },
+  "devDependencies": {
+    "suspend.js": "https://github.com/migreva/suspend.js.git#~0.0.2"
   }
 }

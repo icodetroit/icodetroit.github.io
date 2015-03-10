@@ -6,10 +6,13 @@ $padding-sm: 100px;
 
 .section {
 	@include transition-mixin(opacity 500ms ease-in);
-	height: 100vh;
+	height: 100%;
 
 	p {
 		font-size: 1.45em;
+		@media(min-width: $screen-md-min) {
+			font-size: 1em;
+		}
 	}
 
 	&#top {
@@ -41,6 +44,24 @@ $padding-sm: 100px;
 				margin-left: 7%;
 			}
 		}
+
+		.about-content {
+			font-size: 2em;
+			text-align: center;
+			margin: 3% 5%;
+
+			@media (min-width: $screen-sm-min) {
+				font-size: 3.25em;
+			}
+			@media (min-width: $screen-sm-min) {//$screen-md-min) {
+				font-size: 3.8em;
+			}
+		}
+		.learn-more {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
 	}
 
 	&#contact {
@@ -60,13 +81,25 @@ $padding-sm: 100px;
 		}
 
 		.contact-person {
-			margin: auto auto;
+			margin: 20px auto;
 			font-family: chalkboard;
-			padding: 10px;
+			color: white;
+			position: relative;
+			// padding: 10px;
 
 			&#kristian {
 				$contact-height:  160px * 2;
 				height: $contact-height;
+				// background: url(/static/img/kristian.jpg) no-repeat center center;
+				background-image: url(/static/img/kristian2.jpg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-position: center;
+
+				@media (min-width: $screen-md-min) {
+					background-size: 75%;
+				}
+
 
 				// 1070 × 1600
 				// Aspect ratio: 107 : 160
@@ -79,35 +112,23 @@ $padding-sm: 100px;
 
 			}
 			.contact-info {
-				$label-height: 100px;
-				$label-height-md: 75px;
-				height: $label-height;
-				@media (min-width: $screen-sm-min) {
-					font-size: $label-height-md;
+				.contact-label {
+					color: $primary-color;
+					font-size: 5em;
 				}
-				.label {
-					font-size: $label-height;
-					line-height: $label-height;
-					height: 100%;
-					@media (min-width: $screen-sm-min) {
-						font-size: $label-height-md;
-						line-height: $label-height-md;
-					}
-					
-					
-					color: grey;
-					text-align: right;
-					padding-right: 5px;
-					clear: both;
-				}
+
 				.info {
-					font-size: 45px;
-					line-height: 45px;
-					height: 100%;
-					text-align: left;
-					padding-left: 5px;
-					clear: both;
-					// word-wrap: break-word;
+					font-size: 2em;
+					display: block;
+				}
+				a.info, a.info * {
+					text-decoration: none;
+					color: white;
+					display: inline-block;
+
+					@media (min-width: $screen-md-min) {
+						display: block;
+					}
 				}
 
 			}
@@ -120,7 +141,6 @@ $padding-sm: 100px;
 
 
 	.title {
-		height: 20%;
 		font-size: 5em;
 		font-family: "chalkboard";
 
@@ -223,4 +243,13 @@ $padding-sm: 100px;
 			}
 		}
 	}
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(black, .5);
 }

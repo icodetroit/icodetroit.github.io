@@ -1,0 +1,39 @@
+{
+  "name": "suspend.js",
+  "main": "suspend.js",
+  "version": "0.0.2",
+  "authors": [
+    "Eric Bower <neurosnap@gmail.com>"
+  ],
+  "description": "Simple wait-to-trigger library that suspends a function while an event gets continuously triggered",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "event",
+    "wait",
+    "trigger",
+    "timer"
+  ],
+  "license": "MIT",
+  "homepage": "http://suspend.neurosnap.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
+  ],
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.2",
+    "commit": "b71edffb99303fc8c95c724f3ddd77cf46f657c1"
+  },
+  "_source": "https://github.com/migreva/suspend.js.git",
+  "_target": "~0.0.2",
+  "_originalSource": "https://github.com/migreva/suspend.js.git",
+  "_direct": true
+}

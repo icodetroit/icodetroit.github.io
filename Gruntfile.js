@@ -5,6 +5,9 @@ module.exports = function( grunt ) {
 	grunt.initConfig({
 	  	sass: {
 	    	dist: {
+	    		options: {
+	    			source: "inline"
+	    		},
 	      		files: [{
 			        expand: true,
 			        cwd: 'static/sass',
