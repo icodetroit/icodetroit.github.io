@@ -1,7 +1,4 @@
-@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
-@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "base.scss";
-@import "skrollr.scss";
 
 $gap-overlay-z-index: 1;
 $section-z-index: $gap-overlay-z-index + 1;
@@ -10,16 +7,29 @@ $section-z-index: $gap-overlay-z-index + 1;
 	width: 100%;
 	margin-bottom: 10px;
 
-	.btn {
+	.ico-btn {
 		border-right: 1px solid $primary-color;
 		border-radius: 0px;
 		text-align: center;
 		background-color: white;
 		color: $primary-color;
-		@include make-md-column(4);
+		@include grid(4);
+
+		&:hover {
+			color: $primary-color;
+		}
+
+		&.active {
+			background-color: $primary-color;
+			color: white;
+		}
+
+		&:last-child {
+			border-right: none;
+		}
+
 	}
 }
-
 
 .gap-overlay {
 	position: absolute;

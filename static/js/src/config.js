@@ -9,6 +9,7 @@ requirejs.config({
 	},
 	paths: {
 		"base": "/static/js/src/include/base",
+		"subpage": "/static/js/src/include/subpage",
 		"framework": "/static/js/src/include/framework",
 		"suspend": "/static/bower_components/suspend.js/suspend",
 		"jquery": "/static/bower_components/jquery/dist/jquery.min",
