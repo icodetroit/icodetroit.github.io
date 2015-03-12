@@ -5848,6 +5848,7 @@ p {
         font-size: 1em; } }
   .section#top {
     background-color: #ed7307;
+    opacity: 0;
     padding-top: 100px; }
     .section#top .title {
       color: white;
@@ -5892,8 +5893,8 @@ p {
             .section#top .menu .menu-item.about {
               left: 20%; } }
           .section#top .menu .menu-item.about .text {
-            top: 29%;
-            left: 27%; }
+            top: 26%;
+            left: 23%; }
         .section#top .menu .menu-item.blog {
           background-image: url(../img/thought_bubble_right.png);
           top: 2;
@@ -5913,7 +5914,7 @@ p {
               top: 400px; } }
           .section#top .menu .menu-item.contact .text {
             top: 48%;
-            left: 14%; }
+            left: 11%; }
   .section#about .title {
     background: rgba(255, 255, 255, 0.5);
     margin: 3% 0% 0% 3%;

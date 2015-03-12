@@ -17,6 +17,7 @@ $padding-sm: 100px;
 
 	&#top {
 		background-color: $primary-color;
+		opacity: 0;
 		.title {
 			color: white;	
 			text-align: center;
@@ -66,9 +67,7 @@ $padding-sm: 100px;
 
 				&.about {
 					background-image: url(../img/thought_bubble.png);
-					// @media (max-width: $screen-xs-min) {
-						left: 0%;	
-					// }
+					left: 0%;	
 					top: 2;
 					
 					@media (min-width: $screen-sm-min)  {
@@ -77,8 +76,8 @@ $padding-sm: 100px;
 					
 
 					.text {
-						top: 29%;
-						left: 27%;
+						top: 26%;
+						left: 23%;
 					}
 				}
 
@@ -107,7 +106,7 @@ $padding-sm: 100px;
 
 					.text {
 						top: 48%;
-						left: 14%;
+						left: 11%;
 					}
 				}
 			}
