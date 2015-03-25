@@ -54,3 +54,13 @@ $section-z-index: $gap-overlay-z-index + 1;
 		}
 	}	
 }
+
+.content-section {
+	opacity: 0;
+	display: none;
+
+	&.active {
+		opacity: 1;
+		display: block;
+	}
+}

@@ -1,16 +1,6 @@
 @import "./include/subpage.scss";
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
 
-.content-section {
-	opacity: 0;
-	display: none;
-
-	&.active {
-		opacity: 1;
-		display: block;
-	}
-}
-
 #the-idea {
 	.idea {
 		padding: 20px 10px 0px 10px;

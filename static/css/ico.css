@@ -5805,6 +5805,13 @@ html, body {
     .content .content-section .swiper-container {
       height: 100%; }
 
+.content-section {
+  opacity: 0;
+  display: none; }
+  .content-section.active {
+    opacity: 1;
+    display: block; }
+
 .swiper-button-prev, .swiper-button-next {
   color: #ed7307; }
 
