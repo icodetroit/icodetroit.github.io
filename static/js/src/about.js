@@ -1,5 +1,5 @@
 requirejs(["config"], function() {
-    requirejs(["subpage"], function(subpage) {
+    requirejs(["jquery", "subpage"], function($, subpage) {
 
     });
 });

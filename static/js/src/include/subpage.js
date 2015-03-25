@@ -5,17 +5,21 @@ define(["jquery", "bootstrap", "velocity"], function($, bootstrap, velocity) {
     e.stopPropagation();
     e.stopImmediatePropagation();
 
-    var href = $(this).attr("href");
-    if (!$(href).length) return;
-
-    // Fade out currently-shown page
-    $(".content .content-section.active").removeClass("active");
-    $(href).addClass("active");
-
     // Toggle button states
     $(".subnav .ico-btn.active").removeClass("active");
     $(this).addClass("active");
 
+    var href = $(this).attr("href");
+    if (!$(href).length) return;
+
+    // Fade out currently-shown page
+    $(".content .content-section.active").velocity({opacity: 0}, function(elements) {
+      $(elements).removeClass("active");
+
+      $(href).velocity({opacity: 1}, function(elements) {
+        $(elements).addClass("active");
+      })
+    });
   });
   
   return {

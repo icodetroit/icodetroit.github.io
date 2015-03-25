@@ -21,6 +21,10 @@ $padding-sm: 100px;
 		.title {
 			color: white;	
 			text-align: center;
+			a, a:visited, a:hover, a:active {
+				text-decoration: none;
+				color: inherit;
+			}
 		}
 		padding-top: $padding-sm;
 	

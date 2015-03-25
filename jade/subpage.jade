@@ -1,6 +1,7 @@
 include ./include
 - var menu_items = [];
 - menu_items.push({ value: 'home', displayName: 'Home', href: "/" });
+- menu_items.push({ value: 'ico', displayName: 'ICO', href: "/ico.html" });
 - menu_items.push({ value: 'about', displayName: 'About', href: "/about.html" });
 - menu_items.push({ value: 'blog', displayName: 'Blog', href: "/blog.html" });
 - menu_items.push({ value: 'contact', displayName: 'Contact', href: "contact.html" })
@@ -21,8 +22,9 @@ head
 	include ./meta.jade
 
 	block css
+		link(rel='stylesheet', href='static/css/include/subpage.css')
 	block js
-		script(src='#{requirejs}', data-main='#{js_base}subpage.js', type='text/javascript')
+		script(src='#{requirejs}', data-main='#{js_base}include/subpage.js', type='text/javascript')
 body 
 	.navbar.navbar-default.navbar-static-top
 		.container-fluid
@@ -39,10 +41,8 @@ body
 						+nav_item(item)
 
 	.subnav.container-fluid
-		.row
-			block subnav
+		block subnav
 
 	.container-fluid.content
-		.row
 			block content
 

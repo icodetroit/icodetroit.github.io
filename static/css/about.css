@@ -5753,7 +5753,6 @@ html, body {
   width: 100%;
   margin-bottom: 10px; }
   .subnav .ico-btn {
-    border-right: 1px solid #ed7307;
     border-radius: 0px;
     text-align: center;
     background-color: white;
@@ -5761,18 +5760,30 @@ html, body {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    min-height: 1px;
+    padding-left: 15px;
     padding-right: 15px; }
     @media (min-width: 992px) {
+      .subnav .ico-btn {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 768px) {
       .subnav .ico-btn {
         float: left;
         width: 33.33333%; } }
     .subnav .ico-btn:hover {
       color: #ed7307; }
     .subnav .ico-btn.active {
-      background-color: #ed7307;
-      color: white; }
-    .subnav .ico-btn:last-child {
-      border-right: none; }
+      color: #ed7307;
+      border: 1px solid #ed7307; }
 
 .gap-overlay {
   position: absolute;
@@ -5786,9 +5797,18 @@ html, body {
   background: rgba(0, 0, 0, 0.2);
   z-index: 2; }
 
+.content {
+  height: 100%; }
+  .content .content-section {
+    height: 100%; }
+    .content .content-section .swiper-container {
+      height: 100%; }
+
 .content-section {
+  opacity: 0;
   display: none; }
   .content-section.active {
+    opacity: 1;
     display: block; }
 
 #the-idea .idea {

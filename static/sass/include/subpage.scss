@@ -8,26 +8,22 @@ $section-z-index: $gap-overlay-z-index + 1;
 	margin-bottom: 10px;
 
 	.ico-btn {
-		border-right: 1px solid $primary-color;
 		border-radius: 0px;
 		text-align: center;
 		background-color: white;
 		color: $primary-color;
-		@include grid(4);
+		@include grid(4, 4, 4);
 
 		&:hover {
 			color: $primary-color;
 		}
 
 		&.active {
-			background-color: $primary-color;
-			color: white;
+			// background-color: $primary-color;
+			// color: white;
+			color: $primary-color;
+			border: 1px solid $primary-color;
 		}
-
-		&:last-child {
-			border-right: none;
-		}
-
 	}
 }
 
@@ -44,4 +40,17 @@ $section-z-index: $gap-overlay-z-index + 1;
 .section {
 	background: rgba(#000000, .2);
 	z-index: $section-z-index;
+}
+
+
+.content {
+	height: 100%;
+	
+	.content-section {
+		height: 100%;
+
+		.swiper-container {
+			height: 100%;
+		}
+	}	
 }

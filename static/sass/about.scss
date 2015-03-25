@@ -2,9 +2,11 @@
 @import "../bower_components/fontawesome/css/font-awesome.min.css";
 
 .content-section {
+	opacity: 0;
 	display: none;
 
 	&.active {
+		opacity: 1;
 		display: block;
 	}
 }

@@ -24,6 +24,7 @@
     "bootstrap": "~3.3.2",
     "velocity": "~1.2.2",
     "fontawesome": null,
-    "suspend.js": "https://github.com/migreva/suspend.js.git#~0.0.2"
+    "suspend.js": "https://github.com/migreva/suspend.js.git#~0.0.2",
+    "swiper": null
   }
 }
